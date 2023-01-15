@@ -11,10 +11,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Work+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Work+Sans:wght@500;700&display=swap");
 
+/* Header styling starts */
 .heading {
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 144, 14, 0.1);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -22,11 +20,11 @@
 }
 .header_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px 40px;
-  box-sizing: border-box;
   gap: 300px;
   padding-top: 50px;
+  background: white;
 }
 
 .header_container h1 {
@@ -44,6 +42,9 @@
   color: #131313;
   font-size: 35px;
   display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 144, 14, 0.1);
   flex-direction: column;
   align-items: center;
 }
@@ -83,26 +84,15 @@
 .img1 {
   width: 80%;
 }
+/* Header ends here */
 
-/* Responsive code for nav_bar and banner */
-@media screen and (max-width: 576px) {
-  .header_container {
-    flex-direction: column;
-    gap: 10px;
-    width: 80%;
-  }
-  .nav_bar ul li a {
-    display: block;
-    padding-left: 0px;
-  }
-}
-/* Responsive code for nav_bar and banner ends here */
-
+/* Main starts */
 /* Feature section styling */
 .feature {
   width: 75%;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 .full {
   display: flex;
@@ -127,78 +117,84 @@
   width: 100%;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-}
-.feat h3 {
+.feat {
   font-weight: 500;
   font-size: 45px;
+  padding-top: 20px;
+  color: #727272;
 }
 .text p {
   color: #727272;
+}
+.kala {
+  color: #131313;
+  font-weight: 700;
+}
+.komla {
+  color: #ff900e;
+  font-weight: 700;
 }
 
 /* Second feature section styling starts here */
 
 .both {
-  width: 80%;
+  width: 90%;
   display: flex;
-  align-items: center;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 80px;
 }
 
 .first {
-  width: 586px;
-  height: 982px;
+  width: 50%;
+}
+.first img {
+  width: 100%;
+}
+.first .block {
+  width: 100%;
 }
 
 .first h1 {
-  width: 468px;
-  height: 106px;
   font-size: 45px;
   font-weight: 700;
   color: #131313;
-  border-left: 5px solid #ff900e;
+  border-left: 3px solid #ff900e;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 .first .fet_pera {
   padding-bottom: 775px;
 }
+.block .opt {
+  width: 100%;
+}
 .opt {
-  width: 586px;
-  height: 171px;
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  margin-top: 40px;
+  padding: 15px;
 }
 
 .opt h4 {
   font-size: 20px;
   font-weight: 600;
 }
-
-.sec {
+.first {
   position: relative;
 }
-.arch {
-  width: 800px;
-  height: 1059px;
-}
+
 .exp {
   background: #ff900e;
-  text-align: center;
+  box-sizing: border-box;
   color: #ffffff;
-  width: 242px;
-  height: 130px;
   border-radius: 8px;
   position: absolute;
-
-  bottom: -35px;
-  left: -35px;
+  padding: 20px;
+  bottom: 20px;
+  left: -60px;
 }
 .exp h4 {
-  margin-top: 25px;
   font-size: 45px;
   font-weight: 700;
   text-align: center;
@@ -260,48 +256,13 @@
   text-align: center;
 }
 
-/* Sponsors */
-.sp {
-  font-size: 45px;
-  font-weight: 700;
-  color: #131313;
-  text-align: center;
-}
-.desc {
-  font-size: 16px;
-  font-weight: 400;
-  color: #727272;
-  padding-top: 20px;
-  text-align: center;
-}
-.logos {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 50px;
-}
-
-/* Footer style */
-.right {
-  margin-top: 100px;
-  background: #fff4e7;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  background-position: center;
-  /* text-align: center; */
-  align-items: center;
-  color: #424242;
-}
-
 /* Projects */
 .proj_container {
   width: 90%;
   padding: 20px;
-  margin: 100px auto;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 .pro_box {
   width: 250px;
@@ -324,6 +285,91 @@
   font-size: 50px;
   font-weight: 600;
   border-bottom: 3px solid #ff900e;
-  width: 400px;
+  width: 300px;
   margin: 0 auto;
 }
+.pro_des {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Sponsors */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.sp {
+  font-size: 45px;
+  font-weight: 700;
+  color: #131313;
+  text-align: center;
+}
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  padding-top: 20px;
+  text-align: center;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.gray {
+  filter: grayscale(100%);
+}
+
+/* Footer style */
+.right {
+  margin-top: 100px;
+  background: #fff4e7;
+  padding: 10px;
+  display: flex;
+  width: 1100px;
+  color: #424242;
+  margin-bottom: 50px;
+}
+
+/* Responsive code for nav_bar and banner */
+@media screen and (max-width: 576px) {
+  .header_container {
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+  }
+  .nav_bar ul li a {
+    display: block;
+    padding-left: 0px;
+  }
+  .full {
+    flex-direction: column;
+  }
+  .photo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .both {
+    flex-direction: column;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .proj_container {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .logos {
+    flex-direction: column;
+  }
+  .right {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+/* Responsive code for nav_bar and banner ends here */
